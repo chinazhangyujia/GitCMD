@@ -1,0 +1,30 @@
+git config --global user.name "chinazhangyujia"
+git config --global user.email "chinazhangyujia@gmail.com"
+
+// to the target directory
+cd
+
+// clone the URL, default is the master
+git clone URL
+
+// clone the branch other than master
+git clone URL -b branch1
+
+// add a new branch
+git checkout -b newbranch
+git push origin newbranch
+
+// delete the branch
+git push origin --delete newbranch
+
+// add all changes
+git add -A
+
+// commit the changes
+git commit -m "this is a commit"
+
+// update the change to the remote
+git push
+
+// synchronize the project, when the folder containing .git already in local
+git pull
